@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="vendor/gsap.min.js"></script>
+    <style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { overflow:hidden; background:#0f1c12; }
+body { font-family:"JetBrains Mono", monospace; color:#f3ead9; }
+.display { font-family:"Oswald", sans-serif; }
+.fill { position:absolute; inset:0; }
+.scene { display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; width:100%; height:100%; padding:0 90px; }
+.step-tag { font-family:"JetBrains Mono", monospace; font-weight:700; font-size:26px; letter-spacing:8px; color:#cda434; text-transform:uppercase; display:block; }
+.headline { font-family:"Oswald", sans-serif; font-weight:700; font-size:72px; line-height:1.1; color:#f8f2e4; display:block; max-width:860px; }
+.caption { font-family:"JetBrains Mono", monospace; font-weight:400; font-size:28px; letter-spacing:1px; color:#cbb98f; display:block; max-width:680px; }
+.rule { display:block; width:90px; height:3px; background:#cda434; }
+.icon-wrap { display:flex; align-items:center; justify-content:center; min-height:260px; position:relative; }
+.dust { position:absolute; width:6px; height:6px; border-radius:50%; background:#8fae6a; opacity:0; }
+.vo-cap { font-family:"JetBrains Mono", monospace; font-weight:400; font-size:26px; color:#f3ead9; opacity:0.85; max-width:760px; }
+</style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="30"
+      data-width="1080"
+      data-height="1920"
+      style="position:relative;width:1080px;height:1920px"
+    >
+      <div id="bg" class="clip fill" data-start="0" data-duration="30" data-track-index="0">
+    <div class="fill" style="background:radial-gradient(120% 90% at 50% 8%, #24402c 0%, #16261a 46%, #0f1c12 100%);"></div>
+    <div class="fill" style="background:radial-gradient(120% 60% at 50% 100%, rgba(0,0,0,0.35) 0%, transparent 60%)"></div>
+    <div class="fill" style="border:2px solid rgba(205,164,52,0.28); margin:56px"></div>
+  </div>
+
+      <div id="s0" class="clip scene" data-start="0" data-duration="2" data-track-index="1">
+      <div class="icon-wrap" id="s0-icon"><div style="display:flex;gap:70px;align-items:flex-end">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:14px">
+      <svg width="90" height="110" viewBox="0 0 90 110" fill="none">
+      <path d="M20 30 L70 30 L76 40 L76 96 a6 6 0 0 1 -6 6 L20 102 a6 6 0 0 1 -6 -6 L14 40 Z" fill="none" stroke="#e8c766" stroke-width="3.5"/>
+      <path d="M14 40 L76 40" stroke="#e8c766" stroke-width="3.5"/>
+      <circle cx="45" cy="66" r="14" fill="none" stroke="#cda434" stroke-width="2.5"/>
+    </svg>
+      <span class="step-tag" style="letter-spacing:3px;font-size:22px">SORA MATCHA</span>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:14px">
+      <svg width="90" height="110" viewBox="0 0 90 110" fill="none">
+      <path d="M28 20 L28 8 L62 8 L62 20 L76 46 L76 96 a6 6 0 0 1 -6 6 L20 102 a6 6 0 0 1 -6 -6 L14 46 Z" fill="none" stroke="#e8c766" stroke-width="3.5"/>
+    </svg>
+      <span class="step-tag" style="letter-spacing:3px;font-size:22px">MILK</span>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:14px">
+      <svg width="90" height="110" viewBox="0 0 90 110" fill="none">
+      <rect x="20" y="35" width="30" height="30" rx="6" fill="none" stroke="#f3ead9" stroke-width="3"/>
+      <rect x="44" y="55" width="26" height="26" rx="6" fill="none" stroke="#f3ead9" stroke-width="3"/>
+    </svg>
+      <span class="step-tag" style="letter-spacing:3px;font-size:22px">ICE</span>
+    </div>
+  </div></div><div style="height:24px"></div>
+      <span class="headline" id="s0-h">3 ingredients. 1 delicious matcha latte.</span>
+      </div>
+<div id="s1" class="clip scene" data-start="2" data-duration="3" data-track-index="1">
+      <span class="step-tag" id="s1-tag">①</span><div style="height:24px"></div>
+      <div class="icon-wrap" id="s1-icon"><div style="width:240px;height:240px;border-radius:50%;border:2px solid #cda434;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+  <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 2C12 2 6 6 6 12C6 16 8.5 18.5 12 18.5C15.5 18.5 18 16 18 12C18 6 12 2 12 2Z" fill="#cda434"/></svg>
+  <span class="display" style="font-size:56px;font-weight:700;color:#ffffff;letter-spacing:1px">SORA</span>
+  <span class="display" style="font-size:28px;font-weight:400;letter-spacing:8px;color:#cda434;margin-top:-8px">MATCHA</span>
+</div></div><div style="height:24px"></div>
+      <span class="headline" id="s1-h">Sora Matcha</span>
+      </div>
+<div id="s2" class="clip scene" data-start="5" data-duration="3" data-track-index="1">
+      <span class="step-tag" id="s2-tag">②</span><div style="height:24px"></div>
+      <div class="icon-wrap" id="s2-icon"><svg width="180" height="220" viewBox="0 0 180 220" fill="none">
+  <path d="M60 40 L60 16 L120 16 L120 40 L146 84 L146 196 a10 10 0 0 1 -10 10 L44 206 a10 10 0 0 1 -10 -10 L34 84 Z" fill="none" stroke="#e8c766" stroke-width="4"/>
+  <path d="M34 84 L146 84" stroke="#e8c766" stroke-width="3"/>
+</svg></div><div style="height:24px"></div>
+      <span class="headline" id="s2-h">Your favorite milk</span>
+      </div>
+<div id="s3" class="clip scene" data-start="8" data-duration="2" data-track-index="1">
+      <span class="step-tag" id="s3-tag">③</span><div style="height:24px"></div>
+      <div class="icon-wrap" id="s3-icon"><svg width="180" height="180" viewBox="0 0 180 180" fill="none">
+  <rect id="s3-i1" x="30" y="30" width="60" height="60" rx="10" fill="none" stroke="#f3ead9" stroke-width="4" opacity="0"/>
+  <rect id="s3-i2" x="90" y="70" width="54" height="54" rx="10" fill="none" stroke="#f3ead9" stroke-width="4" opacity="0"/>
+  <rect id="s3-i3" x="46" y="100" width="48" height="48" rx="10" fill="none" stroke="#f3ead9" stroke-width="4" opacity="0"/>
+</svg></div><div style="height:24px"></div>
+      <span class="headline" id="s3-h">Ice</span>
+      </div>
+<div id="s4" class="clip scene" data-start="10" data-duration="4" data-track-index="1">
+      <div class="icon-wrap" id="s4-icon"><svg width="180" height="220" viewBox="0 0 180 220" fill="none">
+  <path d="M50 70 L130 70 L122 200 a10 10 0 0 1 -10 10 L68 210 a10 10 0 0 1 -10 -10 Z" fill="none" stroke="#e8c766" stroke-width="4"/>
+    <ellipse cx="90" cy="70" rx="40" ry="8" fill="none" stroke="#e8c766" stroke-width="4"/>
+  <ellipse cx="128" cy="44" rx="17" ry="10" transform="rotate(-25 128 44)" fill="none" stroke="#e8c766" stroke-width="4"/>
+  <line x1="141" y1="36" x2="160" y2="20" stroke="#e8c766" stroke-width="4" stroke-linecap="round"/>
+</svg>
+<div id="s4-d1" class="dust" style="top:56px;left:78px"></div>
+<div id="s4-d2" class="dust" style="top:56px;left:92px"></div>
+<div id="s4-d3" class="dust" style="top:56px;left:86px"></div></div><div style="height:24px"></div>
+      <div style="height:20px"></div><span class="vo-cap" id="s4-vo">“First, mix your Sora Matcha with a little warm water.”</span>
+      </div>
+<div id="s5" class="clip scene" data-start="14" data-duration="4" data-track-index="1">
+      <div class="icon-wrap" id="s5-icon"><svg width="220" height="220" viewBox="0 0 220 220" fill="none">
+  <ellipse cx="110" cy="150" rx="86" ry="26" fill="none" stroke="#e8c766" stroke-width="4"/>
+  <path d="M28 150 C28 178 64 198 110 198 C156 198 192 178 192 150" fill="none" stroke="#e8c766" stroke-width="4"/>
+  <circle id="s5-f1" cx="82" cy="140" r="7" fill="#f3ead9" opacity="0"/>
+  <circle id="s5-f2" cx="108" cy="132" r="9" fill="#f3ead9" opacity="0"/>
+  <circle id="s5-f3" cx="136" cy="142" r="6" fill="#f3ead9" opacity="0"/>
+  <circle id="s5-f4" cx="120" cy="126" r="5" fill="#f3ead9" opacity="0"/>
+</svg>
+<svg id="s5-whisk" width="70" height="180" viewBox="0 0 70 180" fill="none" style="position:absolute;top:-10px;left:75px;transform-origin:50% 15%">
+  <line x1="35" y1="0" x2="35" y2="70" stroke="#e8c766" stroke-width="6" stroke-linecap="round"/>
+  <path d="M35 70 C14 92 10 122 20 150 M35 70 C24 96 24 128 32 154 M35 70 C35 100 35 130 35 158 M35 70 C46 96 46 128 38 154 M35 70 C56 92 60 122 50 150"
+        stroke="#e8c766" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+</svg></div><div style="height:24px"></div>
+      <div style="height:20px"></div><span class="vo-cap" id="s5-vo">“Mix until smooth.”</span>
+      </div>
+<div id="s6" class="clip scene" data-start="18" data-duration="4" data-track-index="1">
+      <div class="icon-wrap" id="s6-icon"><svg width="220" height="240" viewBox="0 0 220 240" fill="none">
+  <path d="M150 30 L150 14 L176 14 L176 30 L186 52 L186 90 L140 90 L140 52 Z" fill="none" stroke="#e8c766" stroke-width="4"/>
+  <g transform="translate(-40,20)"><path d="M50 70 L130 70 L122 200 a10 10 0 0 1 -10 10 L68 210 a10 10 0 0 1 -10 -10 Z" fill="none" stroke="#e8c766" stroke-width="4"/>
+    <ellipse cx="90" cy="70" rx="40" ry="8" fill="none" stroke="#e8c766" stroke-width="4"/></g>
+  <clipPath id="s6-clip"><path d="M52 74 L128 74 L121 199 a9 9 0 0 1 -9 9 L69 208 a9 9 0 0 1 -9 -9 Z"/></clipPath>
+  <g clip-path="url(#s6-clip)" transform="translate(-40,20)">
+    <rect id="s6-fill" x="52" y="74" width="76" height="134" fill="#f3ead9" opacity="0.9" style="transform-origin:50% 100%;transform-box:fill-box"/>
+    <rect id="s6-i1" x="24" y="150" width="24" height="24" rx="5" fill="none" stroke="#e8c766" stroke-width="2.5" opacity="0"/>
+    <rect id="s6-i2" x="50" y="168" width="22" height="22" rx="5" fill="none" stroke="#e8c766" stroke-width="2.5" opacity="0"/>
+    <rect id="s6-i3" x="30" y="178" width="20" height="20" rx="5" fill="none" stroke="#e8c766" stroke-width="2.5" opacity="0"/>
+  </g>
+  <rect id="s6-stream" x="158" y="90" width="8" height="60" fill="#f3ead9" style="transform-origin:50% 0%;transform-box:fill-box"/>
+</svg></div><div style="height:24px"></div>
+      <div style="height:16px"></div><span class="caption" id="s6-c">Pour milk over ice</span>
+      </div>
+<div id="s7" class="clip scene" data-start="22" data-duration="4" data-track-index="1">
+      <div class="icon-wrap" id="s7-icon"><svg width="180" height="240" viewBox="0 0 180 240" fill="none">
+  <path d="M70 10 L70 -4 L96 -4 L96 10 L106 32 L106 60 L60 60 L60 32 Z" fill="none" stroke="#e8c766" stroke-width="4" transform="translate(0,10)"/>
+  <g transform="translate(0,30)"><path d="M50 70 L130 70 L122 200 a10 10 0 0 1 -10 10 L68 210 a10 10 0 0 1 -10 -10 Z" fill="none" stroke="#e8c766" stroke-width="4"/>
+    <ellipse cx="90" cy="70" rx="40" ry="8" fill="none" stroke="#e8c766" stroke-width="4"/></g>
+  <clipPath id="s7-clip"><path d="M52 74 L128 74 L121 199 a9 9 0 0 1 -9 9 L69 208 a9 9 0 0 1 -9 -9 Z"/></clipPath>
+  <g clip-path="url(#s7-clip)" transform="translate(0,30)">
+    <rect x="52" y="74" width="76" height="134" fill="#f3ead9" opacity="0.9"/>
+    <rect id="s7-swirl" x="52" y="74" width="76" height="134" fill="#cda434" opacity="0.92" style="transform-origin:50% 0%;transform-box:fill-box"/>
+  </g>
+  <rect id="s7-stream" x="78" y="46" width="8" height="50" fill="#cda434" style="transform-origin:50% 0%;transform-box:fill-box"/>
+</svg></div><div style="height:24px"></div>
+      <span class="headline" id="s7-h">AND THAT'S IT! 🍵✨</span>
+      </div>
+<div id="s8" class="clip scene" data-start="26" data-duration="4" data-track-index="1">
+      <div class="icon-wrap" id="s8-icon"><svg width="180" height="220" viewBox="0 0 180 220" fill="none" id="s8-cup" style="transform-origin:50% 100%;transform-box:fill-box">
+  <path d="M50 70 L130 70 L122 200 a10 10 0 0 1 -10 10 L68 210 a10 10 0 0 1 -10 -10 Z" fill="none" stroke="#e8c766" stroke-width="4"/>
+    <ellipse cx="90" cy="70" rx="40" ry="8" fill="none" stroke="#e8c766" stroke-width="4"/>
+  <rect x="82" y="20" width="10" height="56" rx="5" fill="none" stroke="#e8c766" stroke-width="3.5"/>
+  <g clip-path="url(#sip-clip-s8)">
+  </g>
+  <clipPath id="sip-clip-s8"><path d="M52 74 L128 74 L121 199 a9 9 0 0 1 -9 9 L69 208 a9 9 0 0 1 -9 -9 Z"/></clipPath>
+  <g clip-path="url(#sip-clip-s8)">
+    <rect x="52" y="74" width="76" height="134" fill="#f3ead9" opacity="0.9"/>
+    <rect y="74" x="52" width="76" height="70" fill="#cda434" opacity="0.92"/>
+  </g>
+</svg></div><div style="height:24px"></div>
+      <span class="headline" id="s8-h">Save this for your next matcha craving 💚</span>
+      </div>
+
+      <audio id="vo-mix" class="clip" src="assets/vo-mix.wav" data-start="10.4" data-duration="3.05" data-track-index="30" data-volume="1"></audio>
+<audio id="vo-smooth" class="clip" src="assets/vo-smooth.wav" data-start="14.4" data-duration="1.26" data-track-index="31" data-volume="1"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      
+      tl.fromTo("#s0-icon",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},0.15);
+      tl.fromTo("#s0-h",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},0.35);
+      tl.fromTo("#s1-tag",{opacity:0,y:14},{opacity:1,y:0,duration:0.45,ease:"power2.out"},2.05);
+      tl.fromTo("#s1-icon",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},2.15);
+      tl.fromTo("#s1-h",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},2.35);
+      tl.fromTo("#s2-tag",{opacity:0,y:14},{opacity:1,y:0,duration:0.45,ease:"power2.out"},5.05);
+      tl.fromTo("#s2-icon",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},5.15);
+      tl.fromTo("#s2-h",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},5.35);
+      tl.fromTo("#s3-tag",{opacity:0,y:14},{opacity:1,y:0,duration:0.45,ease:"power2.out"},8.05);
+      tl.fromTo("#s3-icon",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},8.15);
+      tl.fromTo("#s3-h",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},8.35);
+      tl.fromTo("#s3-i1",{opacity:0,y:-8},{opacity:1,y:0,duration:0.35,ease:"back.out(1.6)"},8.3);
+      tl.fromTo("#s3-i2",{opacity:0,y:-8},{opacity:1,y:0,duration:0.35,ease:"back.out(1.6)"},8.450000000000001);
+      tl.fromTo("#s3-i3",{opacity:0,y:-8},{opacity:1,y:0,duration:0.35,ease:"back.out(1.6)"},8.600000000000001);
+      tl.fromTo("#s4-icon",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},10.15);
+      tl.fromTo("#s4-vo",{opacity:0},{opacity:1,duration:0.4,ease:"power1.out"},10.25);
+      tl.fromTo("#s4-d1",{opacity:0,y:0},{opacity:1,y:20,duration:0.4,ease:"power1.out"},10.4);
+      tl.to("#s4-d1",{opacity:0,y:46,duration:0.5,ease:"power1.in"},10.8);
+      tl.fromTo("#s4-d2",{opacity:0,y:0},{opacity:1,y:20,duration:0.4,ease:"power1.out"},10.64);
+      tl.to("#s4-d2",{opacity:0,y:46,duration:0.5,ease:"power1.in"},11.040000000000001);
+      tl.fromTo("#s4-d3",{opacity:0,y:0},{opacity:1,y:20,duration:0.4,ease:"power1.out"},10.88);
+      tl.to("#s4-d3",{opacity:0,y:46,duration:0.5,ease:"power1.in"},11.280000000000001);
+      tl.fromTo("#s5-icon",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},14.15);
+      tl.fromTo("#s5-vo",{opacity:0},{opacity:1,duration:0.4,ease:"power1.out"},14.25);
+      tl.fromTo("#s5-whisk",{rotation:-14},{rotation:14,duration:0.2,ease:"power1.inOut",repeat:7,yoyo:true},14.9);
+      tl.fromTo("#s5-f1",{opacity:0,scale:0.3},{opacity:0.9,scale:1,duration:0.35,ease:"back.out(2)"},15.5);
+      tl.fromTo("#s5-f2",{opacity:0,scale:0.3},{opacity:0.9,scale:1,duration:0.35,ease:"back.out(2)"},15.780000000000001);
+      tl.fromTo("#s5-f3",{opacity:0,scale:0.3},{opacity:0.9,scale:1,duration:0.35,ease:"back.out(2)"},16.06);
+      tl.fromTo("#s5-f4",{opacity:0,scale:0.3},{opacity:0.9,scale:1,duration:0.35,ease:"back.out(2)"},16.34);
+      tl.fromTo("#s6-icon",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},18.15);
+      tl.fromTo("#s6-c",{opacity:0,y:14},{opacity:1,y:0,duration:0.5,ease:"power2.out"},18.6);
+      tl.fromTo("#s6-i1",{opacity:0,y:-8},{opacity:1,y:0,duration:0.35,ease:"back.out(1.6)"},18.3);
+      tl.fromTo("#s6-i2",{opacity:0,y:-8},{opacity:1,y:0,duration:0.35,ease:"back.out(1.6)"},18.45);
+      tl.fromTo("#s6-i3",{opacity:0,y:-8},{opacity:1,y:0,duration:0.35,ease:"back.out(1.6)"},18.6);
+      tl.fromTo("#s6-stream",{scaleY:0},{scaleY:1,duration:0.8,ease:"power1.in"},19.0);
+      tl.to("#s6-stream",{scaleY:0,duration:0.3},20.1);
+      tl.fromTo("#s6-fill",{scaleY:0},{scaleY:1,duration:1.1,ease:"power1.out"},19.15);
+      tl.fromTo("#s7-icon",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},22.15);
+      tl.fromTo("#s7-h",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},22.35);
+      tl.fromTo("#s7-stream",{scaleY:0},{scaleY:1,duration:0.9,ease:"power1.inOut"},22.9);
+      tl.to("#s7-stream",{scaleY:0,duration:0.3},24.2);
+      tl.fromTo("#s7-swirl",{scaleY:0},{scaleY:1,duration:1.4,ease:"power1.inOut"},23.0);
+      tl.fromTo("#s8-icon",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},26.15);
+      tl.fromTo("#s8-h",{opacity:0,y:20},{opacity:1,y:0,duration:0.55,ease:"power2.out"},26.35);
+      tl.fromTo("#s8-cup",{rotation:0},{rotation:-10,duration:0.4,ease:"power1.inOut",yoyo:true,repeat:1},26.6);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
